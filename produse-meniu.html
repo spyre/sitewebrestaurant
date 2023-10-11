@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="stilul-siteului.css">
     <style>
-        table{
-            border: 1px solid black;
-        }
-        td{
+        table {
             border: 1px solid black;
         }
 
-        tr{
+        td {
+            border: 1px solid black;
+        }
+
+        tr {
             background-color: beige;
         }
 
-        tr:nth-child(1){
+        tr:nth-child(1) {
             background-color: blue;
         }
 
-        tr:hover{
+        tr:hover {
             background-color: orange;
             cursor: pointer;
         }
-        
-        ul#lista-meniu-simplu{
+
+        table ul:hover {
+            color: green;
+        }
+
+
+        ul#lista-meniu-simplu {
             color: red;
         }
 
+
+        div.div-nasol {
+            background-color: black;
+            color: white;
+            margin-bottom: 6px;
+            width: 50%;
+        }
+
+        div#container-stanga-dreapta{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        
     </style>
 </head>
+
 <body>
     <a href="home.html">Home</a>
     <a href="contact.html">Contact</a>
@@ -39,97 +61,130 @@
     <a href="produse-meniu.html">Meniu</a>
     <h1>Meniul nostru</h1>
 
-    <p>
-        Avem urmatoarele mancaruri
 
-        <ul id="lista-meniu-simplu">
-            <li>Pizza Margherita 10.0</li>
-            <li>Calzzone 15.0</li>
-            <li>Quattro Formaggi 20.0</li>
-            <li>Carbonara 17.0</li>
-            <li>Capriciosa 29.99</li>
-            <li>Country 49.99</li>
-            <li>Hawaii 39.99</li>
-        </ul>
+    <ul>
+        <li>Pizze</li>
+        <li>Drinks</li>
+    </ul>
 
-        <hr>
+    Avem urmatoarele mancaruri
 
-        <p style="color: red; background-color: black;">
-            TODO: please de adaugat ingrediente
-        </p>
+    <ul id="lista-meniu-simplu">
+        <li>Pizza Margherita 10.0</li>
+        <li>Calzzone 15.0</li>
+        <li>Quattro Formaggi 20.0</li>
+        <li>Carbonara 17.0</li>
+        <li>Capriciosa 29.99</li>
+        <li>Country 49.99</li>
+        <li>Hawaii 39.99</li>
+    </ul>
 
-        <table>
-            <tr>
-                <th>Denumire</th>
-                <th>Pret</th>
-                <th>Ingrediente</th>
-                <th>Descriere</th>
-            </tr>
-            <tr>
-                <td>Pizza Margherita</td>
-                <td>10.0</td> 
-                <td>
-                    <ul>
-                        <li>Blat de baza</li>
-                        <li>Mozzarella</li>
-                        <li>Sos rosii</li>
-                        <li>Carne</li>
-                    </ul>
-                </td>
-                <td>
-                    Pizza de baza
-                </td>
-            
-            </tr>
-            <tr>
-                <td>Calzzone</td> 
-                <td>15.0</td>
-                <td>
-                    <ul>
-                        <li>Blat impaturita</li>
-                        <li>Carne</li>
-                        <li>Cheese</li>
-                    </ul>
-                </td>
-                <td>
-                    JDKALJDLKA
-                </td>
-            </tr>
-            <tr>
-                <td>Quattro Formaggi</td>
-                <td>20.0</td>
-                <td>
-                    <ul>
-                        <li>Formaggi 1</li>
-                        <li>Formaggi 2</li>
-                        <li>Formaggi 3</li>
-                        <li>Formaggi 4</li>
-                    </ul>
-                </td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Carbonara</td>
-                <td>17.0</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Capriciosa</td>
-                <td>29.99</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Country</td>
-                <td>49.99</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Hawaii</td>
-                <td>39.99</td>
-                <td></td>
-            </tr>
-        </table>
+    <hr>
 
+    <p style="color: red; background-color: black;">
+        TODO: please de adaugat ingrediente
     </p>
+
+
+    <div class="div-nasol">TEXT 1 </div>
+    <div class="div-nasol">BLA BLA BLA 2</div>
+    <div class="div-nasol">LINIE 3</div>
+
+
+    <div id="container-stanga-dreapta">
+        <div>
+            <h2>Pizzas</h2>
+
+            <table>
+                <tr>
+                    <th>Denumire</th>
+                    <th>Pret</th>
+                    <th>Ingrediente</th>
+                    <th>Descriere</th>
+                </tr>
+                <tr>
+                    <td>Pizza Margherita</td>
+                    <td>10.0</td>
+                    <td>
+                        <ul>
+                            <li>Blat de baza</li>
+                            <li>Mozzarella</li>
+                            <li>Sos rosii</li>
+                            <li>Carne</li>
+                        </ul>
+                    </td>
+                    <td>
+                        Pizza de baza
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>Calzzone</td>
+                    <td>15.0</td>
+                    <td>
+                        <ul>
+                            <li>Blat impaturita</li>
+                            <li>Carne</li>
+                            <li>Cheese</li>
+                        </ul>
+                    </td>
+                    <td>
+                        JDKALJDLKA
+                    </td>
+                </tr>
+                <tr>
+                    <td>Quattro Formaggi</td>
+                    <td>20.0</td>
+                    <td>
+                        <ul>
+                            <li>Formaggi 1</li>
+                            <li>Formaggi 2</li>
+                            <li>Formaggi 3</li>
+                            <li>Formaggi 4</li>
+                        </ul>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Carbonara</td>
+                    <td>17.0</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Capriciosa</td>
+                    <td>29.99</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>49.99</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hawaii</td>
+                    <td>39.99</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Drinks</h2>
+            <table>
+                <tr>
+                    <th>Denumire</th>
+                    <th>Pret</th>
+                    <th>Ingrediente</th>
+                    <th>Descriere</th>
+                </tr>
+                <tr>
+                    <td>Cola</td>
+                    <td>10</td>
+                    <td></td>
+                    <td>Bautura racoritoare carbogazoasa</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
+
 </html>
