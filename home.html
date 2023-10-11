@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="stilul-siteului.css">
+</head>
+<body id="corpul-paginii">
+
+    <a href="home.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+    <a href="produse-meniu.html">Meniu</a>
+
+    <button onclick="schimbaPeDarkTheme()">Dark theme</button>
+    <button>Light theme</button>
+    <h1>Welcome</h1>
+    <p id="paragraf-principal">This is the homepage</p>
+    <hr>
+    <h2>Pizza margherita</h2>
+    <p>
+        Pizza traditionala 
+        cu blat subtire.
+         Pentru mai multe 
+         informatii da click <a title="Catre Wiki" href="https://en.wikipedia.org/wiki/Pizza_Margherita"> AICI</a>
+    </p>
+
+    <h2>Shaorma</h2>
+    <p>Cu de toate</p>
+
+    <h2>Ramen</h2>
+    <p title="Despre Ramen">Ramen noodles made in japan and are quite delicious</p>
+
+    <h2>Sushi</h2>
+    <p>Sushi maki</p>
+    
+    <hr>
+    <p id="paragraf-descriere-restaurant">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nulla quis sem placerat vulputate. Donec sollicitudin ligula vel libero auctor ultrices. Donec sollicitudin risus eu ex lobortis, vitae ullamcorper lorem dapibus. Maecenas egestas consequat pulvinar. In hac habitasse platea dictumst. Fusce efficitur lacinia mauris, vel tristique felis malesuada eu. Nunc convallis malesuada egestas. Curabitur congue faucibus felis, nec malesuada ante congue pharetra. In nec neque non lectus volutpat elementum dapibus vitae est. Sed porttitor nisl eu urna condimentum interdum. Vivamus nec orci luctus, mollis metus quis, commodo enim. Nam egestas odio et justo consequat, in varius risus tempor. Maecenas ut sollicitudin urna. </p>
+    <button title="Vezi intreaga deschidere, click here" onclick="clickPeButonCuArata()">Arata descriere</button>
+    <button title="Ascunde descrierea restaurantului" onclick="clickPeButonCuAscunde()">Ascunde descriere</button>
+
+    <script>
+        // aici o sa apara o reclama!
+        // alert('RECLAMA!!!!');
+        function clickPeButonCuArata(){
+            // alert('AR TREBUI SA ARATAM PARAGRAFUL!');
+            document.getElementById('paragraf-descriere-restaurant').style.display = 'block';
+        }
+
+        function clickPeButonCuAscunde(){
+            // alert('O SA ASCUNDEM UN PARAGRAF!');
+            document.getElementById('paragraf-descriere-restaurant').style.display = 'none';
+        }
+
+        function schimbaPeDarkTheme(){
+            document.getElementById('corpul-paginii').style.backgroundColor = 'black';
+            document.getElementById('corpul-paginii').style.color = 'white';
+        }
+
+    </script>
+
+</body>
+</html>
